@@ -64,6 +64,10 @@ pub const FIB_RECEIPT: &[u8] = &{receipt_bytes:?};
 "##
         );
 
+        // std::fs::write("risc0/zkvm/receipts/src/fib_receipt.bin",
+        // receipt_bytes).unwrap(); std::fs::write("risc0/zkvm/receipts/src/
+        // fib_id.bin", receipt_bytes).unwrap();
+
         std::fs::write("risc0/zkvm/receipts/src/receipts.rs", rust_code).unwrap();
     }
 }
